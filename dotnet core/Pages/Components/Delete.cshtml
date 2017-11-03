@@ -1,0 +1,58 @@
+@page
+@model dotnet_core.Pages.Components.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Component</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Component.ComponentNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Component.ComponentNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Component.SerialNo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Component.SerialNo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Component.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Component.Status)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Component.AdminComment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Component.AdminComment)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Component.UserComment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Component.UserComment)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Component.CurrentLoanInformationId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Component.CurrentLoanInformationId)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Component.ComponentId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

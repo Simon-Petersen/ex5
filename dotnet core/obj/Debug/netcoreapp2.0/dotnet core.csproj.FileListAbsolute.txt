@@ -1,0 +1,11 @@
+c:\Users\Simon\Desktop\IWEB\dotnet core\obj\Debug\netcoreapp2.0\dotnet core.csproj.CoreCompileInputs.cache
+c:\Users\Simon\Desktop\IWEB\dotnet core\obj\Debug\netcoreapp2.0\dotnet core.AssemblyInfoInputs.cache
+c:\Users\Simon\Desktop\IWEB\dotnet core\obj\Debug\netcoreapp2.0\dotnet core.AssemblyInfo.cs
+C:\Users\Simon\Desktop\IWEB\dotnet core\obj\Debug\netcoreapp2.0\dotnet core.csprojResolveAssemblyReference.cache
+C:\Users\Simon\Desktop\IWEB\dotnet core\bin\Debug\netcoreapp2.0\dotnet_core.deps.json
+C:\Users\Simon\Desktop\IWEB\dotnet core\bin\Debug\netcoreapp2.0\dotnet_core.runtimeconfig.json
+C:\Users\Simon\Desktop\IWEB\dotnet core\bin\Debug\netcoreapp2.0\dotnet_core.runtimeconfig.dev.json
+C:\Users\Simon\Desktop\IWEB\dotnet core\bin\Debug\netcoreapp2.0\dotnet_core.dll
+C:\Users\Simon\Desktop\IWEB\dotnet core\bin\Debug\netcoreapp2.0\dotnet_core.pdb
+C:\Users\Simon\Desktop\IWEB\dotnet core\obj\Debug\netcoreapp2.0\dotnet_core.dll
+C:\Users\Simon\Desktop\IWEB\dotnet core\obj\Debug\netcoreapp2.0\dotnet_core.pdb

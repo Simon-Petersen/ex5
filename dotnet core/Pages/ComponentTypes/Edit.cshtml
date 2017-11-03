@@ -1,0 +1,75 @@
+@page
+@model dotnet_core.Pages.ComponentTypes.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>ComponentType</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ComponentType.ComponentTypeId" />
+            <div class="form-group">
+                <label asp-for="ComponentType.ComponentName" class="control-label"></label>
+                <input asp-for="ComponentType.ComponentName" class="form-control" />
+                <span asp-validation-for="ComponentType.ComponentName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ComponentType.ComponentInfo" class="control-label"></label>
+                <input asp-for="ComponentType.ComponentInfo" class="form-control" />
+                <span asp-validation-for="ComponentType.ComponentInfo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ComponentType.Location" class="control-label"></label>
+                <input asp-for="ComponentType.Location" class="form-control" />
+                <span asp-validation-for="ComponentType.Location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ComponentType.Status" class="control-label"></label>
+                <select asp-for="ComponentType.Status" class="form-control"></select>
+                <span asp-validation-for="ComponentType.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ComponentType.Datasheet" class="control-label"></label>
+                <input asp-for="ComponentType.Datasheet" class="form-control" />
+                <span asp-validation-for="ComponentType.Datasheet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ComponentType.ImageUrl" class="control-label"></label>
+                <input asp-for="ComponentType.ImageUrl" class="form-control" />
+                <span asp-validation-for="ComponentType.ImageUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ComponentType.Manufacturer" class="control-label"></label>
+                <input asp-for="ComponentType.Manufacturer" class="form-control" />
+                <span asp-validation-for="ComponentType.Manufacturer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ComponentType.WikiLink" class="control-label"></label>
+                <input asp-for="ComponentType.WikiLink" class="form-control" />
+                <span asp-validation-for="ComponentType.WikiLink" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ComponentType.AdminComment" class="control-label"></label>
+                <input asp-for="ComponentType.AdminComment" class="form-control" />
+                <span asp-validation-for="ComponentType.AdminComment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

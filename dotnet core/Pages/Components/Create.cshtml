@@ -1,0 +1,63 @@
+@page
+@model dotnet_core.Pages.Components.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Component</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Component.ComponentTypeId" class="control-label"></label>
+                <select asp-for="Component.ComponentTypeId" class ="form-control" asp-items="ViewBag.ComponentTypeId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Component.ComponentNumber" class="control-label"></label>
+                <input asp-for="Component.ComponentNumber" class="form-control" />
+                <span asp-validation-for="Component.ComponentNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Component.SerialNo" class="control-label"></label>
+                <input asp-for="Component.SerialNo" class="form-control" />
+                <span asp-validation-for="Component.SerialNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Component.Status" class="control-label"></label>
+                <select asp-for="Component.Status" class="form-control"></select>
+                <span asp-validation-for="Component.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Component.AdminComment" class="control-label"></label>
+                <input asp-for="Component.AdminComment" class="form-control" />
+                <span asp-validation-for="Component.AdminComment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Component.UserComment" class="control-label"></label>
+                <input asp-for="Component.UserComment" class="form-control" />
+                <span asp-validation-for="Component.UserComment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Component.CurrentLoanInformationId" class="control-label"></label>
+                <input asp-for="Component.CurrentLoanInformationId" class="form-control" />
+                <span asp-validation-for="Component.CurrentLoanInformationId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

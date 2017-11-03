@@ -1,0 +1,84 @@
+@page
+@model dotnet_core.Pages.ComponentTypes.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ComponentType[0].ComponentName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ComponentType[0].ComponentInfo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ComponentType[0].Location)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ComponentType[0].Status)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ComponentType[0].Datasheet)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ComponentType[0].ImageUrl)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ComponentType[0].Manufacturer)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ComponentType[0].WikiLink)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ComponentType[0].AdminComment)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.ComponentType) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ComponentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ComponentInfo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Datasheet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Manufacturer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WikiLink)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdminComment)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ComponentTypeId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ComponentTypeId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ComponentTypeId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
