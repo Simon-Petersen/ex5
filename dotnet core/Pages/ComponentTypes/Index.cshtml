@@ -40,6 +40,9 @@
                 <th>
                     @Html.DisplayNameFor(model => model.ComponentType[0].AdminComment)
                 </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ComponentType[0].Components[0])
+                </th>
             <th></th>
         </tr>
     </thead>
@@ -72,6 +75,11 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.AdminComment)
+            </td>
+            <td>
+                @foreach (var item2 in item.Components) {
+                    @Html.DisplayFor(modelItem => item2.ComponentId)
+                }
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ComponentTypeId">Edit</a> |

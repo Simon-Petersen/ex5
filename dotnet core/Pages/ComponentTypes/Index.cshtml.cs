@@ -23,6 +23,10 @@ namespace dotnet_core.Pages.ComponentTypes
         public async Task OnGetAsync()
         {
             ComponentType = await _context.ComponentType.ToListAsync();
+            foreach(var item in ComponentType)
+            {
+                item.Components = _context.Component.Where(id => id.ComponentTypeId == item.ComponentTypeId).ToList();
+            }
         }
     }
 }

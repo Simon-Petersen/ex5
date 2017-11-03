@@ -17,7 +17,8 @@ namespace dotnet_core.Pages.ComponentTypes
         ReservedAdmin
     }
         private readonly dotnet_core.Model.EX5Context _context;
-      
+        public MultiSelectList categorylist;
+        
         public CreateModel(dotnet_core.Model.EX5Context context)
         {
             _context = context;
@@ -25,6 +26,8 @@ namespace dotnet_core.Pages.ComponentTypes
 
         public IActionResult OnGet()
         {
+            var temp = _context.Category.Select(c => new {CategoryId = c.CategoryId, Category = c.Name }).ToList();
+            this.categorylist = new MultiSelectList(temp, "CategoryId", "Category");
             return Page();
         }
 

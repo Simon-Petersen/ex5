@@ -14,6 +14,12 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
+                <label asp-for="ComponentType.Categories" class="control-label"></label>
+                <select asp-for="ComponentType.Categories" class="form-control" asp-items="Model.categorylist" />
+                @Html.DropDownList("CategoryId", (MultiSelectList)Model.categorylist, new { multiple = "multiple"})
+                @Html.ListBox("CategoryId", (MultiSelectList)Model.categorylist)
+            </div>
+            <div class="form-group">
                 <label asp-for="ComponentType.ComponentName" class="control-label"></label>
                 <input asp-for="ComponentType.ComponentName" class="form-control" />
                 <span asp-validation-for="ComponentType.ComponentName" class="text-danger"></span>

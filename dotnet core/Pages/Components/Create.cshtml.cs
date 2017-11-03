@@ -12,7 +12,7 @@ namespace dotnet_core.Pages.Components
     public class CreateModel : PageModel
     {
         private readonly dotnet_core.Model.EX5Context _context;
-
+        public SelectList ComponentTypes;
         public CreateModel(dotnet_core.Model.EX5Context context)
         {
             _context = context;
@@ -20,6 +20,8 @@ namespace dotnet_core.Pages.Components
 
         public IActionResult OnGet()
         {
+            var temp = _context.ComponentType.ToList();
+            this.ComponentTypes = new SelectList(temp, "ComponentTypeId", "ComponentName");
             return Page();
         }
 

@@ -15,7 +15,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Component.ComponentTypeId" class="control-label"></label>
-                <select asp-for="Component.ComponentTypeId" class ="form-control" asp-items="ViewBag.ComponentTypeId"></select>
+                <select asp-for="Component.ComponentTypeId" class ="form-control" asp-items="Model.ComponentTypes"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Component.ComponentNumber" class="control-label"></label>
@@ -29,7 +29,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Component.Status" class="control-label"></label>
-                <select asp-for="Component.Status" class="form-control"></select>
+                <select asp-for="Component.Status" asp-items="Html.GetEnumSelectList<dotnet_core.Model.ComponentStatus>()" class="form-control"></select>
                 <span asp-validation-for="Component.Status" class="text-danger"></span>
             </div>
             <div class="form-group">

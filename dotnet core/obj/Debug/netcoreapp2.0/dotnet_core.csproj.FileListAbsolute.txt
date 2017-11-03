@@ -9,3 +9,14 @@ C:\Users\Simon\Desktop\IWEB\dotnet core\obj\Debug\netcoreapp2.0\dotnet_core.Asse
 C:\Users\Simon\Desktop\IWEB\dotnet core\obj\Debug\netcoreapp2.0\dotnet_core.dll
 C:\Users\Simon\Desktop\IWEB\dotnet core\obj\Debug\netcoreapp2.0\dotnet_core.pdb
 C:\Users\Simon\Desktop\IWEB\dotnet core\obj\Debug\netcoreapp2.0\dotnet_core.csprojResolveAssemblyReference.cache
+C:\Users\Simon\Desktop\IWEB\ex5\dotnet core\bin\Debug\netcoreapp2.0\dotnet_core.deps.json
+C:\Users\Simon\Desktop\IWEB\ex5\dotnet core\bin\Debug\netcoreapp2.0\dotnet_core.runtimeconfig.json
+C:\Users\Simon\Desktop\IWEB\ex5\dotnet core\bin\Debug\netcoreapp2.0\dotnet_core.runtimeconfig.dev.json
+C:\Users\Simon\Desktop\IWEB\ex5\dotnet core\bin\Debug\netcoreapp2.0\dotnet_core.dll
+C:\Users\Simon\Desktop\IWEB\ex5\dotnet core\bin\Debug\netcoreapp2.0\dotnet_core.pdb
+C:\Users\Simon\Desktop\IWEB\ex5\dotnet core\obj\Debug\netcoreapp2.0\dotnet_core.csprojResolveAssemblyReference.cache
+C:\Users\Simon\Desktop\IWEB\ex5\dotnet core\obj\Debug\netcoreapp2.0\dotnet_core.csproj.CoreCompileInputs.cache
+C:\Users\Simon\Desktop\IWEB\ex5\dotnet core\obj\Debug\netcoreapp2.0\dotnet_core.AssemblyInfoInputs.cache
+C:\Users\Simon\Desktop\IWEB\ex5\dotnet core\obj\Debug\netcoreapp2.0\dotnet_core.AssemblyInfo.cs
+C:\Users\Simon\Desktop\IWEB\ex5\dotnet core\obj\Debug\netcoreapp2.0\dotnet_core.dll
+C:\Users\Simon\Desktop\IWEB\ex5\dotnet core\obj\Debug\netcoreapp2.0\dotnet_core.pdb

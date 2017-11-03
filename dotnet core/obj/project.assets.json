@@ -13123,11 +13123,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Simon\\Desktop\\IWEB\\ex5\\dotnet core\\dotnet_core.csproj",
+      "projectUniqueName": "C:\\Users\\Simon\\Desktop\\IWEB\\ex5\\dotnet core\\dotnet_core.csproj",
       "projectName": "dotnet_core",
-      "projectPath": "c:\\Users\\Simon\\Desktop\\IWEB\\ex5\\dotnet core\\dotnet_core.csproj",
+      "projectPath": "C:\\Users\\Simon\\Desktop\\IWEB\\ex5\\dotnet core\\dotnet_core.csproj",
       "packagesPath": "C:\\Users\\Simon\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Simon\\Desktop\\IWEB\\ex5\\dotnet core\\obj\\",
+      "outputPath": "C:\\Users\\Simon\\Desktop\\IWEB\\ex5\\dotnet core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
